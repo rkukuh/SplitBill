@@ -8,17 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		4A9CC52E2A11D81200D480B4 /* SplitBillApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9CC52D2A11D81200D480B4 /* SplitBillApp.swift */; };
-		4A9CC5302A11D81200D480B4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9CC52F2A11D81200D480B4 /* ContentView.swift */; };
+		4A9CC5302A11D81200D480B4 /* SplitBillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9CC52F2A11D81200D480B4 /* SplitBillView.swift */; };
 		4A9CC5322A11D81300D480B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A9CC5312A11D81300D480B4 /* Assets.xcassets */; };
 		4A9CC5352A11D81300D480B4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A9CC5342A11D81300D480B4 /* Preview Assets.xcassets */; };
+		4A9CC53E2A11D84A00D480B4 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9CC53D2A11D84A00D480B4 /* Person.swift */; };
+		4A9CC5402A11D86300D480B4 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9CC53F2A11D86300D480B4 /* Item.swift */; };
+		4A9CC5422A11D8B600D480B4 /* Bill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9CC5412A11D8B600D480B4 /* Bill.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4A9CC52A2A11D81200D480B4 /* SplitBill.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SplitBill.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A9CC52D2A11D81200D480B4 /* SplitBillApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitBillApp.swift; sourceTree = "<group>"; };
-		4A9CC52F2A11D81200D480B4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4A9CC52F2A11D81200D480B4 /* SplitBillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitBillView.swift; sourceTree = "<group>"; };
 		4A9CC5312A11D81300D480B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A9CC5342A11D81300D480B4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4A9CC53D2A11D84A00D480B4 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		4A9CC53F2A11D86300D480B4 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		4A9CC5412A11D8B600D480B4 /* Bill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bill.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +58,8 @@
 			isa = PBXGroup;
 			children = (
 				4A9CC52D2A11D81200D480B4 /* SplitBillApp.swift */,
-				4A9CC52F2A11D81200D480B4 /* ContentView.swift */,
+				4A9CC53B2A11D81B00D480B4 /* Models */,
+				4A9CC53C2A11D82400D480B4 /* Views */,
 				4A9CC5312A11D81300D480B4 /* Assets.xcassets */,
 				4A9CC5332A11D81300D480B4 /* Preview Content */,
 			);
@@ -65,6 +72,24 @@
 				4A9CC5342A11D81300D480B4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4A9CC53B2A11D81B00D480B4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4A9CC53D2A11D84A00D480B4 /* Person.swift */,
+				4A9CC53F2A11D86300D480B4 /* Item.swift */,
+				4A9CC5412A11D8B600D480B4 /* Bill.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4A9CC53C2A11D82400D480B4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4A9CC52F2A11D81200D480B4 /* SplitBillView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +162,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A9CC5302A11D81200D480B4 /* ContentView.swift in Sources */,
+				4A9CC5402A11D86300D480B4 /* Item.swift in Sources */,
+				4A9CC5422A11D8B600D480B4 /* Bill.swift in Sources */,
+				4A9CC53E2A11D84A00D480B4 /* Person.swift in Sources */,
+				4A9CC5302A11D81200D480B4 /* SplitBillView.swift in Sources */,
 				4A9CC52E2A11D81200D480B4 /* SplitBillApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
